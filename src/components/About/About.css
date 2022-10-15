@@ -56,3 +56,28 @@
 .skills_bar {
     background-color: #f1f1f1;
 }
+
+.skills_percentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+.development {
+    width: 90%;
+    background-color: rgb(255, 209, 92);
+}
+
+.ui_design {
+    width: 80%;
+    background-color: rgb(255, 76, 96);
+}
+
+.frontend {
+    width: 85%;
+    background-color: rgb(108, 299, 299);
+}
+
+.mern {
+    width: 60%;
+    background-color: rgb(155, 30, 160);
+}

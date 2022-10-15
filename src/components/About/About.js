@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css'
 import img from '../../assets/avatar-2.svg'
+import AboutBox from './AboutBox';
 
 
 const About = () => {
     return (
         <section className='about section container' id='about'>
-            <h2 className="section_title">About Me</h2>
+            <h2 className="section-title">About Me</h2>
             <div className="about_container grid">
                 <img src={img} alt="" className="about_img" />
                 <div className="about_data grid">
@@ -18,10 +19,10 @@ const About = () => {
                         <div className="skills_data">
                             <div className="skills_title">
                                 <h3 className="skills_name ">Development</h3>
-                                <span className="skilss_number development">90%</span>
+                                <span className="skilss_number ">90%</span>
                             </div>
                             <div className="skills_bar">
-                                <span className="skills_percentage"></span>
+                                <span className="skills_percentage development"></span>
                             </div>
                         </div>
                         <div className="skills_data">
@@ -39,22 +40,22 @@ const About = () => {
                                 <span className="skilss_number">85%</span>
                             </div>
                             <div className="skills_bar">
-                                <span className="skills_percentage"></span>
+                                <span className="skills_percentage frontend"></span>
                             </div>
                         </div>
                         <div className="skills_data">
                             <div className="skills_title">
-                                <h3 className="skills_name"></h3>
-                                <span className="skilss_number"></span>
+                                <h3 className="skills_name">MERN</h3>
+                                <span className="skilss_number">60%</span>
                             </div>
                             <div className="skills_bar">
-                                <span className="skills_percentage"></span>
+                                <span className="skills_percentage mern"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <AboutBox />
         </section>
     )
 }
