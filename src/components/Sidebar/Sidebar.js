@@ -1,12 +1,12 @@
 import React from 'react';
 import './Sidebar.css';
 import Logo from '../../assets/logo.svg'
-import { FaBlog, FaBriefcase, FaFileContract, FaGraduationCap, FaHome, FaLayerGroup, FaMicroblog, FaNode, FaRegStickyNote, FaUserGraduate, } from 'react-icons/fa';
+import { FaBriefcase, FaFileContract, FaHome, FaLayerGroup, FaMicroblog, FaRegStickyNote, FaUserGraduate, } from 'react-icons/fa';
 
 
 const Sidebar = () => {
     return (
-        <aside>
+        <aside className='aside'>
             <a href="#home" className="nav_logo">
                 <img src={Logo} alt="" />
             </a>
