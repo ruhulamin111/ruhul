@@ -4,18 +4,24 @@ import Menu from './Menu'
 import './Portfolio.css'
 
 const Portfolio = () => {
-    const [items, setItems] = useState(Menu)
+    const [items, setItems] = useState(Menu);
+    const filterItem = (categoryItem) => {
+        const updateItems = Menu.filter((selectElement) => {
+            return selectElement.category === categoryItem;
+        })
+        setItems(updateItems)
+    };
 
     return (
         <section className='work container section' id='work'>
             <h2 className='section-title'>Recent Works</h2>
             <div className="work_filters">
-                <span className="work_item">Everything</span>
-                <span className="work_item">Creative</span>
-                <span className="work_item">Art</span>
-                <span className="work_item">Web Desing</span>
-                <span className="work_item">Branding</span>
-                <span className="work_item">Logo</span>
+                <span className="work_item" onClick={() => setItems(Menu)}>Everything</span>
+                <span className="work_item" onClick={() => filterItem('Creative')}>Creative</span>
+                <span className="work_item" onClick={() => filterItem('Art')}>Art</span>
+                <span className="work_item" onClick={() => filterItem('Web Design')}>Web Desing</span>
+                <span className="work_item" onClick={() => filterItem('Branding')}>Branding</span>
+                <span className="work_item" onClick={() => filterItem('Logo')}>Logo</span>
             </div>
             <div className="work_container grid">
                 {items.map((element, i) => {

@@ -18,7 +18,7 @@ const Menu = [
         id: 2,
         image: work2,
         title: "Project Management Illustration",
-        category: 'Web Desing'
+        category: 'Web Design'
     },
     {
         id: 3,
