@@ -1,22 +1,25 @@
 import React from 'react';
 import './Home.css'
-import me from '../../assets/avatar-1.svg'
 import Socials from './Socials';
-import ScrollDown from './ScrollDown';
-import Shapes from './Shapes';
+import Typical from 'react-typical'
 
 const Home = () => {
     return (
         <section className='home container' id='home'>
             <div className='intro'>
-                <img src={me} alt=" " className='home_img' />
-                <h1 className='home_name'> Ruhul Juwel</h1>
-                <span className='home_education'>I have a MERN Developer</span>
+                <div className='profile'>
+                    <div className="profile-background"> </div>
+                </div>
+                <h1 className='home_name'>Ruhul Juwel</h1>
+                <span className='home_education'>
+                    <Typical
+                        steps={['Passoniate Web Developer', 3000, 'MERN Developer', 3000]}
+                        loop={Infinity}
+                    />
+                </span>
                 <Socials />
-                <a href="#contact" className="btn">Hire Me</a>
-                <ScrollDown />
+                <a href="Fullstack-Ruhul-Resume.pdf" download='Fullstack-Ruhul-Resume.pdf' className="btn">Hire Me</a>
             </div>
-            {/* <Shapes /> */}
         </section>
     )
 }

@@ -62,23 +62,23 @@
     background-color: var(--first-color);
 }
 
-.development {
-    width: 90%;
+.javascript {
+    width: 80%;
     background-color: rgb(255, 209, 92);
 }
 
-.ui_design {
-    width: 80%;
+.react {
+    width: 90%;
     background-color: rgb(255, 76, 96);
 }
 
-.frontend {
-    width: 85%;
-    background-color: rgb(108, 299, 299);
+.node {
+    width: 75%;
+    background-color: rgb(108, 209, 299);
 }
 
-.mern {
-    width: 60%;
+.next {
+    width: 70%;
     background-color: rgb(155, 30, 160);
 }
 
@@ -165,3 +165,5 @@
         grid-template-columns: 1fr;
     }
 }
+
+;

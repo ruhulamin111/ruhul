@@ -9,7 +9,6 @@ const ScrollDown = () => {
                     <span className="wheel"></span>
                 </span>
             </a>
-
         </div>
     )
 }

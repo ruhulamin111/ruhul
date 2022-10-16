@@ -4,11 +4,11 @@ import { FaFacebook, FaGithub, FaInstagramSquare, FaLinkedin, FaTwitterSquare } 
 function Socials() {
     return (
         <div className='home_socials'>
-            <a href="#" target='_blank' className="home_socials_link"><FaFacebook /></a>
-            <a href="#" target='_blank' className="home_socials_link"><FaGithub /></a>
-            <a href="#" target='_blank' className="home_socials_link"><FaLinkedin /></a>
-            <a href="#" target='_blank' className="home_socials_link"><FaTwitterSquare /></a>
-            <a href="#" target='_blank' className="home_socials_link"><FaInstagramSquare /></a>
+            <a href="https://www.facebook.com/ruhuljuwel111/" target='_blank' className="home_socials_link" rel="noreferrer"><FaFacebook /></a>
+            <a href="linkedin.com/in/ruhul-juwel-3ba731241" target='_blank' className="home_socials_link" rel="noreferrer"><FaLinkedin /></a>
+            <a href="https://github.com/ruhulamin111" target='_blank' className="home_socials_link" rel="noreferrer"><FaGithub /></a>
+            <a href="linkedin.com/in/ruhul-juwel-3ba731241" target='_blank' className="home_socials_link" rel="noreferrer"><FaTwitterSquare /></a>
+            <a href="linkedin.com/in/ruhul-juwel-3ba731241" target='_blank' className="home_socials_link" rel="noreferrer"><FaInstagramSquare /></a>
         </div>
     )
 }

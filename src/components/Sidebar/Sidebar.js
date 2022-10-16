@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
 import Logo from '../../assets/logo.svg'
-import { FaBriefcase, FaHamburger, FaHome, FaLayerGroup, FaMicroblog, FaRegStickyNote, FaUserGraduate, } from 'react-icons/fa';
-
+import HomeIcon from '@mui/icons-material/Home';
+import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
+import SchoolIcon from '@mui/icons-material/School';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import LayersIcon from '@mui/icons-material/Layers';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
-
+    const date = new Date().getFullYear()
     return (
         <>
             <aside className={toggle ? "aside show_menu" : "aside"}>
@@ -17,33 +22,33 @@ const Sidebar = () => {
                     <div className="nav_menu">
                         <ul className="nav_list">
                             <li className="nav_item">
-                                <a href="#home" className="nav_link"><FaHome /></a>
+                                <a href="#home" className="nav_link"><HomeIcon /></a>
                             </li>
                             <li className="nav_item">
-                                <a href="#about" className="nav_link"><FaBriefcase /></a>
+                                <a href="#about" className="nav_link"><HomeRepairServiceIcon /></a>
                             </li>
                             <li className="nav_item">
-                                <a href="#services" className="nav_link"><FaUserGraduate /></a>
+                                <a href="#resume" className="nav_link"><SchoolIcon /></a>
                             </li>
                             <li className="nav_item">
-                                <a href="#resume" className="nav_link"><FaLayerGroup /></a>
+                                <a href="#work" className="nav_link"><AccountTreeIcon /></a>
                             </li>
                             <li className="nav_item">
-                                <a href="#portfolio" className="nav_link"><FaRegStickyNote /></a>
+                                <a href="#blog" className="nav_link"><LayersIcon /></a>
                             </li>
                             <li className="nav_item">
-                                <a href="#blog" className="nav_link"><FaMicroblog /></a>
+                                <a href="#contact" className="nav_link"><ContactPageIcon /></a>
                             </li>
+
                         </ul>
                     </div>
                 </nav>
                 <div className="nav_footer">
-                    <span className="copyright">2022</span>
+                    <span className="copyright">&copy; {date}</span>
                 </div>
             </aside>
-
             <div className={toggle ? "nav_toggle nav_toggle_open" : "nav_toggle"} onClick={() => showMenu(!toggle)} >
-                <FaHamburger />
+                <MenuIcon />
             </div>
         </>
     );

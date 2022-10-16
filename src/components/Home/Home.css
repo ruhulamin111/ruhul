@@ -30,7 +30,7 @@
 
 .home_socials_link {
     color: var(--title-color);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: .3s;
 }
 
@@ -106,4 +106,31 @@
 .s1 {
     left: 2%;
     top: 10%;
+}
+
+/* profile */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 0px 0px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.profile-background {
+    height: 90%;
+    width: 90%;
+    background-image: url('../../assets/ruhul.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-background:hover {
+    transform: scale(1.08);
+    transition: 1s ease-out;
 }
