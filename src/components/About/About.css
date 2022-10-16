@@ -81,3 +81,23 @@
     width: 60%;
     background-color: rgb(155, 30, 160);
 }
+
+.about_boxes {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.8rem;
+    margin-top: 4.25rem;
+}
+
+.about_box {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.about_icon {
+    font-size: var(--h1-font-size);
+    color: #dedeea;
+}
+
+.about_title {
+    font-size: 1.875rem;
+}

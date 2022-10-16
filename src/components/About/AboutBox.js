@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCoffee, FaProjectDiagram } from 'react-icons/fa'
+import { FaBalanceScale, FaCoffee, FaProjectDiagram } from 'react-icons/fa'
 
 const AboutBox = () => {
     return (
@@ -28,6 +28,13 @@ const AboutBox = () => {
                 </div>
             </div>
 
+            <div className="about_box">
+                <i className='about_icon'><FaBalanceScale /></i>
+                <div>
+                    <h3 className='about_title'>800</h3>
+                    <span className="about_subtitle">Coffee</span>
+                </div>
+            </div>
 
         </div>
     )
