@@ -149,3 +149,19 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .about_container {
+        grid-template-columns: 320px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_boxes {
+        grid-template-columns: 1fr;
+    }
+}

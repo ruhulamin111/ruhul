@@ -78,4 +78,8 @@
     .timeline_item::before {
         left: 0;
     }
+
+    .timeline_text {
+        text-align: justify;
+    }
 }

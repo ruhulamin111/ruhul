@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
+    transition: .3s;
 }
 
 .nav_list {
@@ -49,10 +50,23 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    transition: .3s;
 }
 
 @media screen and (max-width: 1024px) {
     .aside {
         margin-left: -160px;
+    }
+
+    .nav_toggle {
+        display: flex;
+    }
+
+    .nav_toggle_open {
+        left: 160px;
+    }
+
+    .show_menu {
+        left: 160px;
     }
 }

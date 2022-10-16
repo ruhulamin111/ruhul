@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 import Logo from '../../assets/logo.svg'
-import { FaBriefcase, FaFileContract, FaHamburger, FaHome, FaLayerGroup, FaMicroblog, FaRegStickyNote, FaUserGraduate, } from 'react-icons/fa';
+import { FaBriefcase, FaHamburger, FaHome, FaLayerGroup, FaMicroblog, FaRegStickyNote, FaUserGraduate, } from 'react-icons/fa';
 
 
 const Sidebar = () => {
+    const [toggle, showMenu] = useState(false);
+
     return (
         <>
-            <aside className='aside'>
+            <aside className={toggle ? "aside show_menu" : "aside"}>
                 <a href="#home" className="nav_logo">
                     <img src={Logo} alt="" />
                 </a>
@@ -40,7 +42,7 @@ const Sidebar = () => {
                 </div>
             </aside>
 
-            <div className="nav_toggle">
+            <div className={toggle ? "nav_toggle nav_toggle_open" : "nav_toggle"} onClick={() => showMenu(!toggle)} >
                 <FaHamburger />
             </div>
         </>
