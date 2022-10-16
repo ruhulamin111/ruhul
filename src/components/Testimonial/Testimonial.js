@@ -46,7 +46,7 @@ const Testimonial = () => {
                 slidesPerView={1}
                 loop={true}
                 grabCursor={true}
-                pagination={{ clickable: true }}                >
+                pagination={{ clickable: true }} >
                 {
                     data.map(({ id, title, subtitle, comment, image }) => {
                         return (
