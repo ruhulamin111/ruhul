@@ -11,51 +11,51 @@ const Blog = () => {
             <div className="blog_container grid">
                 <div className="blog_card">
                     <div className="blog_thumb">
-                        <a href=""><span className="blog_category">Reviews</span></a>
-                        <a href=""><img src={blog1} alt="" className="blog_img" /></a>
+                        <a href="https://github.com/ruhulamin111">
+                            <span className="blog_category">Frontend</span>
+                            <img src={blog1} alt="" className="blog_img" />
+                        </a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">5 Best Web Development Tool for your project</h3>
+                        <h3 className="blog_title">A front-end web creator executes visual ingredients.</h3>
                         <div className="blog_meta">
-                            <span>10 October 2022</span>
-                            <span className="blog-dot">.</span>
-                            <span>John</span>
+                            <span>01, Agust, 2022</span>
+                            <em>Goerge Harish</em>
                         </div>
                     </div>
                 </div>
-
                 <div className="blog_card">
                     <div className="blog_thumb">
-                        <a href=""><span className="blog_category">Bussiness</span></a>
-                        <a href=""><img src={blog2} alt="" className="blog_img" /></a>
+                        <a href="https://github.com/ruhulamin111">
+                            <span className="blog_category">UI/UX </span>
+                            <img src={blog2} alt="" className="blog_img" />
+                        </a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">5 Best Web Development Tool for your project</h3>
+                        <h3 className="blog_title">It deals with its specialization in web designing, application designing.</h3>
                         <div className="blog_meta">
-                            <span> 15 October 2022</span>
-                            <span className="blog-dot">.</span>
-                            <span>John</span>
+                            <span>01, September, 2022</span>
+                            <em>Robert Philips</em>
                         </div>
                     </div>
                 </div>
-
                 <div className="blog_card">
                     <div className="blog_thumb">
-                        <a href=""><span className="blog_category">Tutorials</span></a>
-                        <a href=""><img src={blog3} alt="" className="blog_img" /></a>
+                        <a href="https://github.com/ruhulamin111">
+                            <span className="blog_category">Fullstack</span>
+                            <img src={blog3} alt="" className="blog_img" />
+                        </a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">5 Best Web Development Tool for your project</h3>
+                        <h3 className="blog_title">MERN Stack is a open-source JavaScript software stack for building dynamic Websites.</h3>
                         <div className="blog_meta">
-                            <span>5 Agust 2022</span>
-                            <span className="blog-dot">.</span>
-                            <span>John</span>
+                            <span>01, October, 2022</span>
+                            <em>John Knedy</em>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </section >
     )
 }
 

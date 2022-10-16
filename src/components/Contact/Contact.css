@@ -49,6 +49,10 @@
     resize: none;
 }
 
+.contact_details span {
+    font-weight: var(--font-semibold);
+}
+
 @media screen and (max-width: 1024px) {
     .contact_container {
         justify-content: center;
