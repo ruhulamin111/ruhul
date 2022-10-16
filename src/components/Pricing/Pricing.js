@@ -20,7 +20,9 @@ const Pricing = () => {
                     </h3>
                     <a href="#" className="btn">Get Started</a>
                 </div>
-                <div className="pricing_item">
+
+                <div className="pricing_item best">
+                    <span className="badge">Recommended</span>
                     <img src={img2} alt="" className="pricing_img" />
                     <h3 className="pricing_plan">Standard</h3>
                     <p className="pricing_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum.</p>
@@ -30,7 +32,8 @@ const Pricing = () => {
                     </h3>
                     <a href="" className="btn">Get Started</a>
                 </div>
-                <div className="pricing_item">
+
+                <div className="pricing_item ">
                     <img src={img3} alt="" className="pricing_img" />
                     <h3 className="pricing_plan">Premium</h3>
                     <p className="pricing_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, ex?</p>
