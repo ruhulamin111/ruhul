@@ -8,20 +8,20 @@ const data = [
     {
         id: 1,
         image: img1,
-        title: "Web Development",
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ipsa excepturi doloribus ea nihil esse cum, consequatur nisi porro repellendus.'
+        title: "UI/UX Design",
+        description: 'It deals with its specialization in web designing, application designing and also have the features of usability testing, prototype creations.'
     },
     {
         id: 2,
         image: img2,
-        title: "UI/UX Design ",
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ipsa excepturi doloribus ea nihil esse cum, consequatur nisi porro repellendus.'
+        title: "MERN Development",
+        description: 'MERN STACK is a free and open-source JavaScript software stack for building dynamic Websites and Web-Applications. The MERN Stack is one the popular JavaScript Stacks.'
     },
     {
         id: 3,
         image: img3,
-        title: "MERN Development",
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ipsa excepturi doloribus ea nihil esse cum, consequatur nisi porro repellendus.'
+        title: "Frontend Focus Fullstack",
+        description: 'A front-end web creator executes visual ingredients, which users detect and interact with. Back-end network creators, who are in charge of server-side petition logic and combining the work performed by front-end developers, usually encourage them.'
     }
 ]
 
