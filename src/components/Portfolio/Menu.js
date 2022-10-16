@@ -11,38 +11,38 @@ const Menu = [
     {
         id: 1,
         image: work1,
-        title: "Project Management Illustration",
-        category: 'Everything'
+        title: "Brimstone University",
+        category: 'Fullstack'
     },
     {
         id: 2,
         image: work2,
-        title: "Project Management Illustration",
-        category: 'Web Design'
+        title: "Crypto Verse",
+        category: 'UI/UX'
     },
     {
         id: 3,
         image: work3,
-        title: "Project Management Illustration",
-        category: 'Branding'
+        title: "Food Court",
+        category: 'Frontend'
     },
     {
         id: 4,
         image: work4,
-        title: "Project Management Illustration",
-        category: 'Art'
+        title: "Falcon Shop",
+        category: 'Fullstack'
     },
     {
         id: 5,
         image: work5,
-        title: "Project Management Illustration",
-        category: 'Logo'
+        title: "Daily Mail",
+        category: 'UI/UX'
     },
     {
         id: 6,
         image: work6,
-        title: "Project Management Illustration",
-        category: 'Creative'
+        title: "Space Shop",
+        category: 'Frontend'
     }
 ]
 

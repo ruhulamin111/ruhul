@@ -14,23 +14,23 @@ const data = [
     {
         id: 1,
         image: img1,
-        title: 'John Doe',
-        subtitle: 'Product Designer at Deriable',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iure ipsa ullam amet nam enim laboriosam repellendus exercitationem doloribus recusandae!'
+        title: 'Arifin Shakti',
+        subtitle: 'Senior Web Developer',
+        comment: 'Create a Google My Business Post. These are like mini advertisements within your Google profile that give people an idea of what you sell or the service you provide.'
     },
     {
         id: 2,
         image: img2,
-        title: 'John Doe',
-        subtitle: 'Product Designer at Deriable',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iure ipsa ullam amet nam enim laboriosam repellendus exercitationem doloribus recusandae!'
+        title: 'John Knedy',
+        subtitle: 'Chief Requirter',
+        comment: 'A multi-page website has different advantages than a single-page website. The biggest advantage is, of course, that you can add multiple pages to your website.'
     },
     {
         id: 3,
         image: img3,
-        title: 'John Doe',
-        subtitle: 'Product Designer at Deriable',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iure ipsa ullam amet nam enim laboriosam repellendus exercitationem doloribus recusandae!'
+        title: 'Mahbub Chawdhury',
+        subtitle: 'CEO of PHero',
+        comment: 'By encouraging customers to provide you with reviews and testimonials, you can better understand your audiences pain points, prove your value to prospects.'
     }
 ]
 
