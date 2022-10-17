@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Services.css'
 import img1 from '../../assets/service-1.svg'
 import img2 from '../../assets/service-2.svg'
 import img3 from '../../assets/service-3.svg'
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 const data = [
     {
@@ -25,23 +27,47 @@ const data = [
     }
 ]
 
-
 const Services = () => {
+    const { ref, inView } = useInView();
+    const animation = useAnimation()
+    useEffect(() => {
+        if (inView) {
+            animation.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    duration: 1,
+                    type: 'ease-in'
+                }
+            })
+        }
+        if (!inView) {
+            animation.start({
+                x: -400,
+                opacity: 0,
+            })
+        }
+    }, [inView, animation])
+
     return (
-        <section className='services container section ' id='services'>
-            <h2 className="section-title">Services</h2>
-            <div className="services_container grid">
-                {data.map(({ id, image, title, description }) => {
-                    return (
-                        <div className="services_card" key={id}>
-                            <img src={image} alt="" className="services_img" />
-                            <h3 className="services_title">{title}</h3>
-                            <p className="services_description">{description}</p>
-                        </div>
-                    )
-                })}
-            </div>
-        </section>
+        <div ref={ref}>
+            <motion.section
+                animate={animation}
+                className='services container section ' id='services'>
+                <h2 className="section-title">Services</h2>
+                <div className="services_container grid">
+                    {data.map(({ id, image, title, description }) => {
+                        return (
+                            <div className="services_card" key={id}>
+                                <img src={image} alt="" className="services_img" />
+                                <h3 className="services_title">{title}</h3>
+                                <p className="services_description">{description}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </motion.section>
+        </div>
     )
 }
 

@@ -1,12 +1,13 @@
 import React from 'react'
-import { FaBalanceScale, FaCoffee, FaProjectDiagram } from 'react-icons/fa'
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
-import BrightnessHighIcon from '@mui/icons-material/BrightnessHigh';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 
 const AboutBox = () => {
+
+
+
     return (
         <div className='about_boxes grid'>
             <div className="about_box">

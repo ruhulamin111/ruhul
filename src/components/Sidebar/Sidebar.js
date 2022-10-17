@@ -8,13 +8,19 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import LayersIcon from '@mui/icons-material/Layers';
 import MenuIcon from '@mui/icons-material/Menu';
+import { motion } from "framer-motion"
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
     const date = new Date().getFullYear()
+
     return (
-        <>
-            <aside className={toggle ? "aside show_menu" : "aside"}>
+        <div  >
+            <motion.aside
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: .5 }}
+                className={toggle ? "aside show_menu" : "aside"}>
                 <a href="#home" className="nav_logo">
                     <img src={Logo} alt="" />
                 </a>
@@ -46,11 +52,11 @@ const Sidebar = () => {
                 <div className="nav_footer">
                     <span className="copyright">&copy; {date}</span>
                 </div>
-            </aside>
+            </motion.aside>
             <div className={toggle ? "nav_toggle nav_toggle_open" : "nav_toggle"} onClick={() => showMenu(!toggle)} >
                 <MenuIcon />
             </div>
-        </>
+        </div>
     );
 };
 
