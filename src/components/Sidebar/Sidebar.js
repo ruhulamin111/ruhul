@@ -21,7 +21,7 @@ const Sidebar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: .5 }}
                 className={toggle ? "aside show_menu" : "aside"}>
-                <a href="#home" className="nav_logo">
+                <a href="/" className="nav_logo">
                     <img src={Logo} alt="" />
                 </a>
                 <nav className="nav">

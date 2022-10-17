@@ -7,10 +7,10 @@
 
 :root {
     /* color  */
-    --first-color: hsl(353, 100%, 65%);
-    --title-color: hsl(244, 24%, 26%);
-    --text-color: hsl(244, 16%, 43%);
-    --body-color: hsl(258, 60%, 98%);
+    --first-color: hsl(333, 93%, 56%);
+    --title-color: hsl(258, 86%, 34%);
+    --text-color: hsl(232, 17%, 35%);
+    --body-color: hsl(133, 100%, 98%);
     --container-color: #fff;
     /* text size  */
     --body-font: 'Rubik', sans-serif;
