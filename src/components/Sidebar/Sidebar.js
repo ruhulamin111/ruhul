@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/ruhul_logo.svg'
 import HomeIcon from '@mui/icons-material/Home';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import SchoolIcon from '@mui/icons-material/School';
@@ -22,7 +22,7 @@ const Sidebar = () => {
                 transition={{ duration: .5 }}
                 className={toggle ? "aside show_menu" : "aside"}>
                 <a href="/" className="nav_logo">
-                    <img src={Logo} alt="" />
+                    <img className='logo' src={Logo} alt="" />
                 </a>
                 <nav className="nav">
                     <div className="nav_menu">

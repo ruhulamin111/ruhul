@@ -1,13 +1,14 @@
 .home {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .intro {
-    max-width: 550px;
+    /* max-width: 550px; */
     text-align: center;
     z-index: 1;
 }
@@ -35,7 +36,7 @@
 }
 
 .home_socials_link:hover {
-    color: hsl(43, 100%, 68%);
+    color: hsl(332, 63%, 51%);
 }
 
 .scroll_down {

@@ -53,6 +53,10 @@
     transition: .3s;
 }
 
+.nav_logo {
+    transform: scale(6);
+}
+
 @media screen and (max-width: 1024px) {
     .aside {
         margin-left: -160px;

@@ -40,7 +40,7 @@ const Home = () => {
                     <h1 className='home_name'>Ruhul Juwel</h1>
                     <span className='home_education'>
                         <Typical
-                            steps={['Passoniate Web Developer', 3000, 'MERN Developer', 3000]}
+                            steps={['MERN Developer', 3000, 'React Developer', 4000, 'JavaScript Developer', 5000,]}
                             loop={Infinity}
                         />
                     </span>
